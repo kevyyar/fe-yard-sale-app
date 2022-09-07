@@ -1,8 +1,11 @@
 const mail = document.querySelector(".navbar-email");
 const mailMenu = document.querySelector(".desktop-menu");
+const mobileMenuIcon = document.querySelector(".menu");
+const mobileMenu = document.querySelector(".mobile-menu");
 
-mail.addEventListener("click", toggleMailMenu);
+mail.addEventListener("click", () => toggleMenu(mailMenu));
+mobileMenuIcon.addEventListener("click", () => toggleMenu(mobileMenu));
 
-function toggleMailMenu() {
-  mailMenu.classList.toggle("inactive");
+function toggleMenu(element) {
+  element.classList.toggle("inactive");
 }
