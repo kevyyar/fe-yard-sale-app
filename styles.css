@@ -121,20 +121,6 @@ nav {
   display: inline-block;
 }
 
-
-@media (max-width: 640px) {
-  .menu {
-    display: block;
-    cursor: pointer;
-  }
-  .navbar-left ul {
-    display: none;
-  }
-  .navbar-email {
-    display: none;
-  }
-}
-
 /* Mobile Menu Styles */
 .mobile-menu {
   padding: 24px;
@@ -163,4 +149,28 @@ nav {
 .sign-out {
   font-size: var(--sm);
   color: var(--hospital-green) !important;
+}
+
+
+@media (max-width: 640px) {
+  .menu {
+    display: block;
+    cursor: pointer;
+  }
+  .navbar-left ul {
+    display: none;
+  }
+  .navbar-email {
+    display: none;
+  }
+  .desktop-menu {
+    display: none;
+  }
+}
+
+
+@media (min-width: 641px) {
+  .mobile-menu {
+    display: none;
+  }
 }
